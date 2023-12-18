@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.api.winddevice.fan.mapper.FanLineMapper">
+    
+    <resultMap type="FanLine" id="FanLineResult">
+        <result property="id"    column="id"    />
+        <result property="devId"    column="dev_id"    />
+        <result property="fengliang"    column="fengliang"    />
+        <result property="xiaolv"    column="xiaolv"    />
+        <result property="gonglv"    column="gonglv"    />
+        <result property="jiaodu"    column="jiaodu"    />
+        <result property="quanya"    column="quanya"    />
+        <result property="tongfengzuli"    column="tongfengzuli"    />
+        <result property="zhuansu"    column="zhuansu"    />
+        <result property="var1"    column="var1"    />
+        <result property="var2"    column="var2"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.api.winddevice.window.newversion.mapper.WindowOperMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruoyi.project.api.winddevice.window.newversion.domain.WindowOperEntity" id="windowOperMap">
+        <result property="id" column="id"/>
+        <result property="devId" column="dev_id"/>
+        <result property="czlx" column="czlx"/>
+        <result property="czmc" column="czmc"/>
+        <result property="createUser" column="create_user"/>
+        <result property="createTime" column="create_time"/>
+        <result property="timeMs" column="time_ms"/>
+        <result property="devName" column="dev_name"/>
+        <result property="devLocation" column="dev_location"/>
+    </resultMap>
+
+
+
+</mapper>

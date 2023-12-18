@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.api.anemometry.mapper.WindFullHisMapper">
+    
+    <resultMap type="WindFullHis" id="WindFullHisResult">
+        <result property="id"    column="id"    />
+        <result property="devId"    column="dev_id"    />
+        <result property="code"    column="code"    />
+        <result property="name"    column="name"    />
+        <result property="location"    column="location"    />
+        <result property="windArea"    column="wind_area"    />
+        <result property="windSpeed"    column="wind_speed"    />
+        <result property="surface"    column="surface"    />
+        <result property="airVolume"    column="air_volume"    />
+        <result property="measureTime"    column="measure_time"    />
+        <result property="temperature"    column="temperature"    />
+        <result property="pressure"    column="pressure"    />
+        <result property="absolutePressure"    column="absolute_pressure"    />
+        <result property="locationPressure"    column="location_pressure"    />
+        <result property="dynamicPressure"    column="dynamic_pressure"    />
+        <result property="pressureTemperature"    column="pressure_temperature"    />
+        <result property="airHumidity"    column="air_humidity"    />
+        <result property="speedDatas"    column="speed_datas"    />
+        <result property="originSpeed"    column="origin_speed"    />
+        <result property="duizhenga"    column="duizhenga"    />
+        <result property="duizhengb"    column="duizhengb"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+
+    <select id="findTopList" parameterType="list" resultType="WindFullHis">
+        select a1.name,a1.measure_time,a1.air_volume,a1.dev_id from tb_wind_full_his a1
+        inner join
+        (select a.dev_id,a.measure_time from tb_wind_full_his a left join tb_wind_full_his b
+        on a.dev_id=b.dev_id and a.measure_time &lt;= b.measure_time
+        where a.dev_id in
+        <foreach item="full" index="index" collection="list" open="(" separator="," close=")">
+            #{full.id}
+        </foreach>
+        group by a.dev_id,a.measure_time
+        having count(b.measure_time) &lt;= 20
+        )b1
+        on a1.dev_id=b1.dev_id and a1.measure_time=b1.measure_time
+        order by a1.dev_id,a1.measure_time desc
+    </select>
+</mapper>

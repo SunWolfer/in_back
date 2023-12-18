@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.api.winddevice.door.newversion.mapper.DoorMapper">
+    
+    <resultMap type="Door" id="DoorResult">
+        <result property="id"    column="id"    />
+        <result property="code"    column="code"    />
+        <result property="name"    column="name"    />
+        <result property="type"    column="type"    />
+        <result property="mainType"    column="main_type"    />
+        <result property="devType"    column="dev_type"    />
+        <result property="location"    column="location"    />
+        <result property="devVersion"    column="dev_version"    />
+        <result property="ip"    column="ip"    />
+        <result property="port"    column="port"    />
+        <result property="addrNum"    column="addr_num"    />
+        <result property="length"    column="length"    />
+        <result property="width"    column="width"    />
+        <result property="areaAll"    column="area_all"    />
+        <result property="roadArea"    column="road_area"    />
+        <result property="windRoadArea"    column="wind_road_area"    />
+        <result property="videoUrl"    column="video_url"    />
+        <result property="onlineStatus"    column="online_status"    />
+        <result property="airStatus"    column="air_status"    />
+        <result property="warnStatus"    column="warn_status"    />
+        <result property="warnTime"    column="warn_time"    />
+        <result property="workModel"    column="work_model"    />
+        <result property="doorStatusA"    column="door_status_a"    />
+        <result property="doorStatusB"    column="door_status_b"    />
+        <result property="lockStatus"    column="lock_status"    />
+        <result property="rsSensorType"    column="rs_sensor_type"    />
+        <result property="rsPort"    column="rs_port"    />
+        <result property="speed"    column="speed"    />
+        <result property="volume"    column="volume"    />
+        <result property="pressure"    column="pressure"    />
+        <result property="absolutePressure"    column="absolute_pressure"    />
+        <result property="temperature"    column="temperature"    />
+        <result property="humidity"    column="humidity"    />
+        <result property="diOcExists"    column="di_oc_exists"    />
+        <result property="diOcNum"    column="di_oc_num"    />
+        <result property="diType"    column="di_type"    />
+        <result property="diSensorType"    column="di_sensor_type"    />
+        <result property="diWarn"    column="di_warn"    />
+        <result property="diWarnOcNum"    column="di_warn_oc_num"    />
+        <result property="ai1Type"    column="ai1_type"    />
+        <result property="ai1SensorType"    column="ai1_sensor_type"    />
+        <result property="ai1SensorFactory"    column="ai1_sensor_factory"    />
+        <result property="ai1SensorModel"    column="ai1_sensor_model"    />
+        <result property="ai1SensorValueOri"    column="ai1_sensor_value_ori"    />
+        <result property="ai1SensorValueFormat"    column="ai1_sensor_value_format"    />
+        <result property="ai1Warn"    column="ai1_warn"    />
+        <result property="ai2Type"    column="ai2_type"    />
+        <result property="ai2SensorType"    column="ai2_sensor_type"    />
+        <result property="ai2SensorFactory"    column="ai2_sensor_factory"    />
+        <result property="ai2SensorModel"    column="ai2_sensor_model"    />
+        <result property="ai2SensorValueOri"    column="ai2_sensor_value_ori"    />
+        <result property="ai2SensorValueFormat"    column="ai2_sensor_value_format"    />
+        <result property="ai2Warn"    column="ai2_warn"    />
+        <result property="doorFlag"    column="door_flag"    />
+        <result property="num1"    column="num1"    />
+        <result property="num2"    column="num2"    />
+        <result property="num3"    column="num3"    />
+        <result property="num4"    column="num4"    />
+        <result property="sensorId"    column="sensor_id"    />
+        <result property="coil1Start"    column="coil1_start"    />
+        <result property="input2Start"    column="input2_start"    />
+        <result property="holding3Start"    column="holding3_start"    />
+        <result property="input4Start"    column="input4_start"    />
+        <result property="mapBind"    column="map_bind"    />
+        <result property="mapModelCode"    column="map_model_code"    />
+        <result property="pointX"    column="point_x"    />
+        <result property="pointY"    column="point_y"    />
+        <result property="pointZ"    column="point_z"    />
+        <result property="positionX"    column="position_x"    />
+        <result property="positionY"    column="position_y"    />
+        <result property="positionZ"    column="position_z"    />
+        <result property="lookAtX"    column="look_at_x"    />
+        <result property="lookAtY"    column="look_at_y"    />
+        <result property="lookAtZ"    column="look_at_z"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="timeMs"    column="time_ms"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="updateTimeMs"    column="update_time_ms"    />
+        <result property="dataTime"    column="data_time"    />
+        <result property="dataTimeMs"    column="data_time_ms"    />
+    </resultMap>
+
+
+</mapper>

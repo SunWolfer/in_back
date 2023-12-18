@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.api.winddevice.fan.mapper.FanPropertyRelationMapper">
+    
+    <resultMap type="FanPropertyRelation" id="FanPropertyRelationResult">
+        <result property="id"    column="id"    />
+        <result property="devId"    column="dev_id"    />
+        <result property="fanType"    column="fan_type"    />
+        <result property="name"    column="name"    />
+        <result property="devAs"    column="dev_as"    />
+        <result property="electricMachine"    column="electric_machine"    />
+        <result property="propertyName"    column="property_name"    />
+        <result property="propertyCode"    column="property_code"    />
+        <result property="propertyValue"    column="property_value"    />
+        <result property="propertyType"    column="property_type"    />
+        <result property="propertyUnit"    column="property_unit"    />
+        <result property="orderNum"    column="order_num"    />
+        <result property="showFlag"    column="show_flag"    />
+        <result property="reportTime"    column="report_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+
+</mapper>
